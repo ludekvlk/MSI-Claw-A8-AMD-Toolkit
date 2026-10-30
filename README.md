@@ -2,9 +2,15 @@
 
 Install AMD Software: Adrenalin Edition **26.10.1** on an MSI Claw A8 BZ2EM with a matching Ryzen Z2 Extreme graphics device.
 
+**Current release: [Community Beta 1 — v1.0.0-beta.1](https://github.com/ludekvlk/MSI-Claw-A8-AMD-Toolkit/releases/tag/v1.0.0-beta.1)** · [Download toolkit ZIP](https://github.com/ludekvlk/MSI-Claw-A8-AMD-Toolkit/releases/download/v1.0.0-beta.1/MSI-Claw-A8-AMD-26.10.1-GitHub-Source.zip) · [Download checksum](https://github.com/ludekvlk/MSI-Claw-A8-AMD-Toolkit/releases/download/v1.0.0-beta.1/MSI-Claw-A8-AMD-26.10.1-GitHub-Source.zip.sha256)
+
+You need **two downloads**: this small toolkit ZIP and AMD's full 26.10.1 installer. The AMD driver download is separate; follow Step 2 below.
+
 This is a community adaptation of the Legion Go driver toolkit. It takes the official AMD download, prepares a package for the exact MSI graphics device, signs that package locally, installs it, and checks the result after restarting Windows.
 
 **Status: community beta.** One local MSI Claw A8 installation has a saved successful final audit from **29 October 2026: 51 checks passed, no failures or warnings**. This source preparation adds documentation, packaging and a boot-output safety fix; it has passed read-only checks but has not been installed again. Success on one device does not guarantee success on every Claw A8 or every Windows setup. See [the review and validation limits](docs/REVIEW.md).
+
+[GitHub's read-only source validation passed](https://github.com/ludekvlk/MSI-Claw-A8-AMD-Toolkit/actions/runs/41096126927) for the released commit. This checks package integrity and safety fixtures; it does not install a driver on a physical Claw A8.
 
 **Read the preparation steps before starting.** The toolkit changes the graphics driver, certificate trust and boot settings, and restarts Windows several times. Secure Boot must be disabled and remain disabled while using this locally signed configuration. Windows Test Signing is temporary and must finish OFF. Save your work and keep your encryption recovery key somewhere you can access without this device.
 
@@ -74,7 +80,9 @@ Use the built-in **Windows PowerShell 5.1**. The `.cmd` shortcuts select it auto
 
 ## Step 1 — Download this project and extract it
 
-On this project's GitHub page, select the green **Code** button, then **Download ZIP**. Download this MSI adaptation, rather than the upstream Lenovo-only release. If a packaged MSI release is available, you can use that release ZIP instead.
+Open the [Community Beta 1 release page](https://github.com/ludekvlk/MSI-Claw-A8-AMD-Toolkit/releases/tag/v1.0.0-beta.1). Under **Assets**, download **`MSI-Claw-A8-AMD-26.10.1-GitHub-Source.zip`**. You can also use the [direct toolkit ZIP download](https://github.com/ludekvlk/MSI-Claw-A8-AMD-Toolkit/releases/download/v1.0.0-beta.1/MSI-Claw-A8-AMD-26.10.1-GitHub-Source.zip).
+
+The attached toolkit ZIP is the packaged version checked for this release. GitHub also lists automatically generated **Source code** archives. Those contain the tagged repository snapshot; the named toolkit ZIP is the simplest download to follow with this guide. **Code → Download ZIP** on the repository page downloads the current branch, which may include later changes.
 
 1. Save the ZIP in **Downloads**.
 2. Right-click the ZIP and choose **Properties**. If Windows shows **Unblock**, tick it and select **Apply** after checking that you trust the download.
@@ -82,6 +90,14 @@ On this project's GitHub page, select the green **Code** button, then **Download
 4. Open the extracted folder. You should see `Start-MSI-Claw-A8-AMD-26.10.1.cmd` and an `Internal` folder.
 
 You may rename the outer folder to something simple, such as `MSI-Claw-A8-AMD-26.10.1`. Keep all files and the `Internal` folder together. Do not run from inside the ZIP or move individual scripts into another folder.
+
+The release includes a `.sha256` file for checking the named toolkit ZIP. Its SHA-256 is:
+
+```text
+98A5DE0C41F018FC24EFCCCD45F0F6F61796000D2167123E8742E3EC0D4E9CCE
+```
+
+This checksum applies to the attached **Community Beta 1 toolkit ZIP**, not AMD's installer or GitHub's generated source archives.
 
 ## Step 2 — Download the official AMD 26.10.1 installer
 
