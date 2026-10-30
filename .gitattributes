@@ -1,0 +1,7 @@
+# Runtime files have byte-exact SHA256 entries. Never normalize them on checkout.
+* -text
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf

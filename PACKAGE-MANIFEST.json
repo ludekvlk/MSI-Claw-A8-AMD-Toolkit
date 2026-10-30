@@ -1,0 +1,167 @@
+[
+    {
+        "Path":  "01-Prepare-Build-Sign-And-Enter-Test-Signing.ps1",
+        "Length":  34428,
+        "SHA256":  "D620EB89CA022346D0DD76EAB63B28557998A27513858EA457791F2A0DA41BBC"
+    },
+    {
+        "Path":  "02-Install-Driver-And-Verify-Normal-Signing.ps1",
+        "Length":  74204,
+        "SHA256":  "0FFEC35E10A81BA89239C366400DC7A5C7BBABA39F26D4C26C47670414FBF9D6"
+    },
+    {
+        "Path":  "03-Install-AMD-Software-And-Reboot.ps1",
+        "Length":  36321,
+        "SHA256":  "F54EC9C97769CC20E39910E667204D41304A37F173CBC3E75D92497A899D7F31"
+    },
+    {
+        "Path":  "04-Final-Persistence-Audit.ps1",
+        "Length":  28820,
+        "SHA256":  "986C5F506DB97E96F86656E6C6620DE0D38BCF609BE108F1B35CEDB6D19DE767"
+    },
+    {
+        "Path":  "Check-Compatibility.cmd",
+        "Length":  214,
+        "SHA256":  "58A397E45545D2D24A5C0A0AE95941AD8C27203F89116F53C139EB2809FAC923"
+    },
+    {
+        "Path":  "Check-MSI-Claw-A8-Compatibility.ps1",
+        "Length":  1995,
+        "SHA256":  "FF8DC13969C3FD19F25017C82C8BF88BB684F3E688997D02AEA0DFFF6E269401"
+    },
+    {
+        "Path":  "Install-LegionGo-AMD-26.10.1.ps1",
+        "Length":  64050,
+        "SHA256":  "FC2AD4ED731A2211A135A892F85D964F691375B099953DE6B14A266AC5BDADE8"
+    },
+    {
+        "Path":  "Instructions.txt",
+        "Length":  1190,
+        "SHA256":  "413376EE71D5FC8BA0A925DA463B1377FC6526B3538CCDA9DC265D96F7DB75B4"
+    },
+    {
+        "Path":  "Internal\\Build-V4-AmdGcfDat.ps1",
+        "Length":  13242,
+        "SHA256":  "C9C656E3836A741A9754BDA31E04AED0879F28D45DCFC711268FE6268C66691D"
+    },
+    {
+        "Path":  "Internal\\Build-V4-Inf.ps1",
+        "Length":  25100,
+        "SHA256":  "CECF2CBA25E8FA2024B3956AAE5A898487720300403485FFD41EC262FFEE2147"
+    },
+    {
+        "Path":  "Internal\\Common.ps1",
+        "Length":  157193,
+        "SHA256":  "4566F3DAC05D4FFAD1F556C60C51258194477E36642A9FD9840AE25D0D456A93"
+    },
+    {
+        "Path":  "Internal\\Official-Catalog-Targets-14.json",
+        "Length":  3298,
+        "SHA256":  "25BAA48F8B69FCE85565ADC236B3941E1B442C935BB94C0351DEE559892D9CED"
+    },
+    {
+        "Path":  "Internal\\Origin-Classifier.ps1",
+        "Length":  40024,
+        "SHA256":  "8F181D999F6F5F822B074FD0C4E5A46C94957ADA8A47E62BB884E822218D2830"
+    },
+    {
+        "Path":  "Internal\\Profile-Resolver.ps1",
+        "Length":  7085,
+        "SHA256":  "D801789B0A46073ED4FC75512259626D49EB85B35581B93E5BCDB2F066CE7554"
+    },
+    {
+        "Path":  "Internal\\Profiles\\LegionGo1.json",
+        "Length":  1147,
+        "SHA256":  "97F591292281BCCA58080C6206B346F0E96CDF5D5D16E49C712FAE2918D0A6C1"
+    },
+    {
+        "Path":  "Internal\\Profiles\\LegionGo2-Z2Extreme.json",
+        "Length":  3825,
+        "SHA256":  "4194A1A71445F54D875C3F5A541C3DD1BE81191C112EA94644AF8E4A0511BB03"
+    },
+    {
+        "Path":  "Internal\\Profiles\\LegionGoS-Z1Extreme.json",
+        "Length":  4223,
+        "SHA256":  "14E833AE8A1FE4BEF75D5D94A79C07B6DEC7CC6C7F0BEAE79912FB51FB31A60D"
+    },
+    {
+        "Path":  "Internal\\Profiles\\MsiClawA8-Z2Extreme.json",
+        "Length":  1781,
+        "SHA256":  "47F4729BE4A4B26A2CD80879A7005CC3DE73FE1EDE5FACE12B4710E9D41982B5"
+    },
+    {
+        "Path":  "Internal\\Release-Contract.psd1",
+        "Length":  751,
+        "SHA256":  "E16E9ED4877AF1E5407C36A08B43BCABC4F09D5C525BFEBB339143D1DAF37037"
+    },
+    {
+        "Path":  "Internal\\Test-BcdBooleanOutput.ps1",
+        "Length":  1207,
+        "SHA256":  "633DE64FC27003092056A4B9D1D54684DCC97BC6C30F1FEC25103918E25E9C52"
+    },
+    {
+        "Path":  "Internal\\Test-BootSafety.ps1",
+        "Length":  2649,
+        "SHA256":  "BE7FA6C65CC1D84A92C06D8D68FE7680569C5DD71B6503B9DF4370C5BBDB6ACA"
+    },
+    {
+        "Path":  "Internal\\Test-DriverStoreQueries.ps1",
+        "Length":  3288,
+        "SHA256":  "C5185A2346DA02B366AB082EBF74FD36ADF22E98848A29551C7ED90086C26896"
+    },
+    {
+        "Path":  "Internal\\Test-MsiClawA8.ps1",
+        "Length":  2507,
+        "SHA256":  "5882835899181CB80B2FB30DE3E14F955D60C7ADDF5D6870CF38B5E1D3DE0674"
+    },
+    {
+        "Path":  "Internal\\Test-RecoveryRearm.ps1",
+        "Length":  2339,
+        "SHA256":  "5DD74EB4023D21D9EE0E0BF564AAF9E668745C25C722F2526EE69DBE162D01E9"
+    },
+    {
+        "Path":  "Internal\\V4-Unchanged-190.json",
+        "Length":  28979,
+        "SHA256":  "1E657A79BA64C86461664751021F87E5D7E29A216CE2422BBA93B9F24F5C6174"
+    },
+    {
+        "Path":  "Internal\\Workflow-Hardening.ps1",
+        "Length":  6674,
+        "SHA256":  "88524C0601EA66274D50F0246564D6CFE7139AD21AFCE50DF67415C2207C74C2"
+    },
+    {
+        "Path":  "Preflight-AMD-26.10.1-Public-Beta-v5.0.ps1",
+        "Length":  16017,
+        "SHA256":  "F6D56C754FF947E0CABEA1861CF49E69F971C95488AE0E6F85C7B031055491BD"
+    },
+    {
+        "Path":  "PUBLIC-RELEASE-SCOPE.json",
+        "Length":  4000,
+        "SHA256":  "17BD2D2FB094C90880E03782746AAC4420E8FF8FBF0F3AE8F49C48287F33247E"
+    },
+    {
+        "Path":  "README.txt",
+        "Length":  1435,
+        "SHA256":  "07249D990E6F68A6BB076A32D74A16C532EAD8F50C1BAF65C053DBEC2E600729"
+    },
+    {
+        "Path":  "README-MSI-Claw-A8.txt",
+        "Length":  1257,
+        "SHA256":  "33EA9D04067A1D0020C62308A8912FCC8DC64BC34678DDCAE547F6E46B4BB526"
+    },
+    {
+        "Path":  "Run-Validated-LegionGo-AMD-26.10.1-Public-Beta-v5.0.ps1",
+        "Length":  5573,
+        "SHA256":  "E8712B4FE3E378C8864E37FBF4CB1F4FB1423D09F1FA0AC479F70B2A8168E541"
+    },
+    {
+        "Path":  "Start-LegionGo-AMD-26.10.1.cmd",
+        "Length":  229,
+        "SHA256":  "A8D95CAF02C6D3F7736697DA620F9D37F10BFB966AC40EDE3A11381436E67053"
+    },
+    {
+        "Path":  "Start-MSI-Claw-A8-AMD-26.10.1.cmd",
+        "Length":  229,
+        "SHA256":  "A8D95CAF02C6D3F7736697DA620F9D37F10BFB966AC40EDE3A11381436E67053"
+    }
+]

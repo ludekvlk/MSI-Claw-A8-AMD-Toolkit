@@ -1,0 +1,17 @@
+1. Read README.md before changing anything.
+2. Extract the whole project ZIP to a normal folder under your user Downloads.
+3. Run Check-Compatibility.cmd for a read-only MSI hardware/Windows check.
+4. Download AMD's full 26.10.1 installer from AMD and keep the original .exe
+   under Downloads. Do not run it yourself; the toolkit extracts it.
+5. Preserve your BitLocker/Device Encryption recovery key, suspend protection
+   deliberately before boot/firmware changes, and disable Secure Boot.
+6. Save your work, connect the charger, and run Start-MSI-Claw-A8-AMD-26.10.1.cmd.
+7. Read the confirmations. Accepting them allows automatic installation/reboots.
+8. Sign in to the same Windows account after each restart and let it continue.
+9. Wait for final success: MSI normally has 51 checks, driver 32.0.32015.7029,
+   Test Signing OFF and nointegritychecks OFF. Secure Boot must remain disabled.
+10. Resume encryption protection after the complete workflow succeeds.
+
+If a stage fails, stop and keep the workflow, rollback and evidence folders.
+Do not run numbered scripts separately or force a hardware mismatch.
+This is a community beta, not a promise of universal Claw A8 compatibility.
