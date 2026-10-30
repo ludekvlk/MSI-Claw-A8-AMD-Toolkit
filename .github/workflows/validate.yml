@@ -1,0 +1,22 @@
+name: Read-only source checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  windows-source:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package integrity and Windows PowerShell parsing
+        shell: powershell
+        run: |
+          & .\Preflight-AMD-26.10.1-Public-Beta-v5.0.ps1
+          if ($LASTEXITCODE -ne 0) { throw 'Preflight failed.' }
+      - name: Hardware routing, boot safety and recovery fixtures
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Stop'
+          foreach ($test in @('Test-MsiClawA8.ps1', 'Test-BootSafety.ps1', 'Test-RecoveryRearm.ps1', 'Test-BcdBooleanOutput.ps1')) {
+            & powershell.exe -NoProfile -ExecutionPolicy Bypass -File (Join-Path '.\Internal' $test)
+            if ($LASTEXITCODE -ne 0) { throw "Failed: $test" }
+          }
