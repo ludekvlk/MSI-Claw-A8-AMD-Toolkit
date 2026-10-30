@@ -1,0 +1,102 @@
+{
+  "SchemaVersion": 1,
+  "Id": "LegionGoS-Z1Extreme",
+  "DisplayName": "Lenovo Legion Go S Z1 Extreme",
+  "InstallCapable": true,
+  "Hardware": {
+    "ExactHardwareId": "PCI\\VEN_1002&DEV_15BF&SUBSYS_380C17AA&REV_04",
+    "HardwarePrefix": "PCI\\VEN_1002&DEV_15BF&SUBSYS_380C17AA",
+    "VendorId": "1002",
+    "DeviceId": "15BF",
+    "SubsystemId": "380C17AA",
+    "Revision": "04"
+  },
+  "Amd": {
+    "Family": "Phoenix",
+    "BaseInstallSection": "ati2mtag_Phoenix",
+    "DedicatedInstallSection": "ati2mtag_Phoenix_LegionGoS"
+  },
+  "Lenovo": {
+    "ExtensionId": "{07A2A561-D001-4503-B239-EF2FE0379EFB}",
+    "KnownOemDisplay": [
+      {
+        "OriginalInf": "u0200470.inf",
+        "DriverVersion": "32.0.23033.1002",
+        "SHA256": "FE3EB3142BAD4E6F9E9BF9F570C31CBEE92D0C4A3EAADE70DA760D066AA5E08F"
+      }
+    ],
+    "KnownOemExtension": [
+      {
+        "OriginalInf": "amduw23e.inf",
+        "DriverVersion": "32.0.23033.1002",
+        "SHA256": "9DA4775E40F322522732E3F630F7DE4C790D1A1AA4CD0F34B6430EA082EA988F"
+      }
+    ],
+    "RequiredSemanticMarkers": [
+      "DalPSRFeatureEnable=1",
+      "DisableFBCSupport=0",
+      "SmartDCSupported=1",
+      "SmartDCDefMode=0",
+      "DalDisplayableSupport=0",
+      "PP_UserVariBrightLevel=2",
+      "Dal_UserVariBrightLevel=2",
+      "DalMinBrightnessMillinits=0x2710"
+    ],
+    "OemSectionOrder": [
+      "ati2mtag_SoftwareDeviceSettings",
+      "ati2mtag_NAVIA_SoftwareDeviceSettings",
+      "ati2mtag_Phoenix_SoftwareDeviceSettings",
+      "ati2mtag_Mobile_SoftwareDeviceSettings"
+    ],
+    "OemSections": {
+      "ati2mtag_SoftwareDeviceSettings": [
+        "HKR,,DALNonStandardModesBCD5,%REG_BINARY%,07,20,12,80,00,00,00,00,08,00,12,80,00,00,00,00,09,00,16,00,00,00,00,00,09,60,05,40,00,00,00,00,09,60,06,00,00,00,00,00,10,00,16,00,00,00,00,00,10,80,19,20,00,00,00,00,12,00,19,20,00,00,00,00,12,80,07,20,00,00,00,00,12,80,08,00,00,00,00,00,14,40,25,60,00,00,00,00,16,00,09,00,00,00,00,00,16,00,10,00,00,00,00,00,19,20,10,80,00,00,00,00",
+        "HKR,,DalMinBrightnessMillinits,%REG_DWORD%,0x2710",
+        "HKR,,DALRestrictedModesBCD5,%REG_BINARY%,08,00,06,00,00,00,00,00,10,24,07,68,00,00,00,00,12,80,10,24,00,00,00,00,16,00,12,00,00,00,00,00,16,80,10,50,00,00,00,00",
+        "HKR,,DalEdgeDimmingLevelMapping,%REG_DWORD%,0x03000000",
+        "HKR,,PP_WaitOnRegisterTimeout,%REG_DWORD%,0x2710",
+        "HKR,,AllowWebContent,%REG_SZ%,false",
+        "HKR,,LogoUrl,%REG_SZ%,hide",
+        "HKR,,SystemTray,%REG_SZ%,false",
+        "HKR,\"UMD\\DXVA\",DynamicContrast_ENABLE_DEF,%REG_SZ%,0",
+        "HKR,,DALRULE_ALLOWMONITORRANGELIMITMODESCRT,%REG_DWORD%,0",
+        "HKR,\"UMD\\DXVA\",DXVA_WMV,%REG_SZ%,0",
+        "HKR,\"UMD\\DXVA\",DXVA_WMV_DEF,%REG_SZ%,0",
+        "HKR,,DXVA_WMV_NA,%REG_SZ%,1"
+      ],
+      "ati2mtag_NAVIA_SoftwareDeviceSettings": [
+        "HKR,,DalSupportExternalPanelDrr,%REG_DWORD%,1"
+      ],
+      "ati2mtag_Phoenix_SoftwareDeviceSettings": [
+        "HKR,,DalDisableZ10,%REG_DWORD%,1",
+        "HKR,,DalEdgeDimmingLevelMapping,%REG_DWORD%,0x03000000",
+        "HKR,,EnableswGCForceAtcL24KbWa,%REG_DWORD%,1",
+        "HKR,,DalPSRFeatureEnable,%REG_DWORD%,1",
+        "HKR,,DisableFBCSupport,%REG_DWORD%,0",
+        "HKR,,SmartDCSupported,%REG_DWORD%,1",
+        "HKR,,SmartDCDefMode,%REG_DWORD%,0",
+        "HKR,,DalDisplayableSupport,%REG_DWORD%,0",
+        "HKR,,Gmx_EnableHwFlipQueue,%REG_DWORD%,0",
+        "HKR,,KmdEnableHwFlipQueue,%REG_DWORD%,0",
+        "HKR,,BDC72DEA40E855EFFDFB, %REG_BINARY%,59,79,07,9B",
+        "HKR,,BDC7EDEA37E855EFFD36, %REG_BINARY%,59,79,07,9B",
+        "HKR,,BDC7EDEA40E855EFFDFB, %REG_BINARY%,59,79,07,9B",
+        "HKR,,BDC7F3EA40E855EFFDFB, %REG_BINARY%,59,79,07,9B"
+      ],
+      "ati2mtag_Mobile_SoftwareDeviceSettings": [
+        "HKR,,PP_UserVariBrightLevel,%REG_DWORD%,2",
+        "HKR,,Dal_UserVariBrightLevel,%REG_DWORD%,2"
+      ]
+    }
+  },
+  "ToolkitPolicy": {},
+  "Dat": {
+    "DeviceIdHex": "15BF",
+    "RevisionHex": "04",
+    "Mode": "ShareGo1DeviceRevision"
+  },
+  "Final": {
+    "ExpectedInfSHA256": "6108B18E339E221506CB153B2F77B9521D1C7DF9B23429BA61381979A5BFE42E",
+    "ExpectedDatSHA256": "B928E5C32E85895A1C8EF20FBC90D3348C593AF88A1C6BF94E9A6B6E4A650E32"
+  }
+}

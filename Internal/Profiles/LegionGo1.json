@@ -1,0 +1,42 @@
+{
+  "SchemaVersion": 1,
+  "Id": "LegionGo1",
+  "DisplayName": "Lenovo Legion Go 1 Z1 Extreme",
+  "InstallCapable": true,
+  "Hardware": {
+    "ExactHardwareId": "PCI\\VEN_1002&DEV_15BF&SUBSYS_381217AA&REV_04",
+    "HardwarePrefix": "PCI\\VEN_1002&DEV_15BF&SUBSYS_381217AA",
+    "VendorId": "1002",
+    "DeviceId": "15BF",
+    "SubsystemId": "381217AA",
+    "Revision": "04"
+  },
+  "Amd": {
+    "Family": "Phoenix",
+    "BaseInstallSection": "ati2mtag_Phoenix",
+    "DedicatedInstallSection": "ati2mtag_Phoenix_LegionGo"
+  },
+  "Lenovo": {
+    "ExtensionId": "{07A2A561-D001-4503-B239-EF2FE0379EFB}",
+    "KnownOemDisplay": [
+      {
+        "DriverVersion": "32.0.23017.1001"
+      }
+    ],
+    "KnownOemExtension": [],
+    "RequiredSemanticMarkers": []
+  },
+  "ToolkitPolicy": {
+    "ColorVibrance_ENABLE_DEF": 1,
+    "ShowRSOverlay": true
+  },
+  "Dat": {
+    "DeviceIdHex": "15BF",
+    "RevisionHex": "04",
+    "Mode": "FrozenV4Behavior"
+  },
+  "Final": {
+    "ExpectedInfSHA256": "AE9D42FEA2FCBD6739CF1E4F540EA4A7F21EF5DA099C66F603130843462E747D",
+    "ExpectedDatSHA256": "B928E5C32E85895A1C8EF20FBC90D3348C593AF88A1C6BF94E9A6B6E4A650E32"
+  }
+}

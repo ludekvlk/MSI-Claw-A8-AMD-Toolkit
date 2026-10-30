@@ -1,0 +1,49 @@
+{
+    "SchemaVersion":  1,
+    "Id":  "MsiClawA8-Z2Extreme",
+    "DisplayName":  "MSI Claw A8 BZ2EM Z2 Extreme",
+    "InstallCapable":  true,
+    "Hardware":  {
+                     "ExactHardwareId":  "PCI\\VEN_1002\u0026DEV_150E\u0026SUBSYS_14AF1462\u0026REV_C5",
+                     "HardwarePrefix":  "PCI\\VEN_1002\u0026DEV_150E\u0026SUBSYS_14AF1462",
+                     "VendorId":  "1002",
+                     "DeviceId":  "150E",
+                     "SubsystemId":  "14AF1462",
+                     "Revision":  "C5"
+                 },
+    "Amd":  {
+                "Family":  "Strix",
+                "BaseInstallSection":  "ati2mtag_Strix",
+                "DedicatedInstallSection":  "ati2mtag_Strix_MsiClawA8"
+            },
+    "Lenovo":  {
+                   "ExtensionId":  "{07A2A561-D001-4503-B239-EF2FE0379EFB}",
+                   "KnownOemDisplay":  [
+
+                                       ],
+                   "KnownOemExtension":  [
+
+                                         ],
+                   "RequiredSemanticMarkers":  [
+
+                                               ],
+                   "OemSectionOrder":  [
+
+                                       ],
+                   "OemSections":  {
+
+                                   }
+               },
+    "ToolkitPolicy":  {
+
+                      },
+    "Dat":  {
+                "DeviceIdHex":  "150E",
+                "RevisionHex":  "C5",
+                "Mode":  "InsertIfAbsent"
+            },
+    "Final":  {
+                  "ExpectedInfSHA256":  "B279B6972A93D5ECA2D8D40F160F60D4B69206E3BC0DD1AC9A7BEB9CFA890C7E",
+                  "ExpectedDatSHA256":  "CDF57D74268F3CB763A996C16811CCB26F4055750743EEB68D03D8D686A2EC02"
+              }
+}
